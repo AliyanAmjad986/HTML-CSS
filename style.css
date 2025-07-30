@@ -1,0 +1,13 @@
+.headings {
+    font-size: 1.5em;
+    color: #68ced0;
+    margin: 10px;
+}
+#myimg {
+    height: auto;
+   width: 100px;
+   border-radius: 10px;
+}
+body {
+    background-image: url('Background.png'); ;
+}
