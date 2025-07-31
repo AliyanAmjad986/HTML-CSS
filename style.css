@@ -1,6 +1,6 @@
 .headings {
     font-size: 1.5em;
-    color: #68ced0;
+    color: #c29025f4;
     margin: 10px;
 }
 #myimg {
@@ -8,6 +8,84 @@
    width: 100px;
    border-radius: 10px;
 }
-body {
-    background-image: url('Background.png'); ;
-}
+/* body {
+    background-image: url('Background.png'); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+} */
+ 		body{
+            background-image: url('back2.gif');
+            background-size: 100% 100%;
+            
+        }
+        .skills-table {
+            border-width: 2px;
+            border-color: rgb(255, 7, 7);
+            
+        }
+        
+		.skills-table tr {
+            
+            border-color: black;
+            border-right-color: black;
+            border-bottom-left-radius: 10px;
+             height: 50px;
+             
+
+        }
+         .skills-table th {
+            background-color: #c29025f4;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            width: 10% ;
+            border-width: 2px;
+            border-spacing: 100px;
+            
+        
+        }
+        .skills-table th:hover {
+                background-color: #0f7705f4;
+            }
+        
+       
+        .skills-table td {
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            width: 20%;
+            border-width: 5px;
+             border-spacing: 100px;
+           
+        } 
+        a {
+            text-decoration: none;
+            color: #c29025f4;
+        }
+        .buttons {
+            background-color: #c29025f4;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: grabbing;
+            
+        }
+        .buttons:hover {
+            background-color: #0f7705f4;
+        }
+        .nav{
+            list-style-type: none;
+        }
+        .navbutton {
+            background-color: #c29025f4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .navbutton:hover {
+            background-color: #0f7705f4;
+        }

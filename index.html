@@ -7,8 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Untitled design.png" type="image/x-icon">
 </head>
+
+    	
+
+
 <body>
+<ul class="nav">
     
+    <a href=""><button class="navbutton"><li>About</li></button></a>
+     <a href=""><button class="navbutton"><li>Education</li></button></a>
+     <a href=""><button class="navbutton"><li >Skills</li></button></a>
+     <a href=""><button class="navbutton"><li >Projects</li></button></a>
+     <a href=""><button class="navbutton"><li>Resume</li></button></a>
+     <a href=""><button class="navbutton"><li>Contact</li></button></a>
+    
+</ul>
     <h1>⚽Welcome to my portfolio!</h1>
     <img id="myimg" src="mypic.jpg" alt="mypic">
     
@@ -26,12 +39,27 @@
     <li>Capital University of Science and Technology Islamabad</li>
 </ul>
 <h5 class="headings">Skills: </h5>
-<ol>
-    <li>Java</li>
-    <li>Javafx + CSS</li>
-    <li>MySql</li>
-    <li>HTML + CSS</li>
-</ol>
+
+<table class="skills-table" border="1">
+    <tr>
+        <th> Skill</th>
+        <th>Level</th>
+        <th>Rating</th>
+    </tr>
+    <tr class="HTML CSS">
+        <td>HTML+CSS</td>
+        <td>Intermediate</td>
+        <td>⭐⭐⭐</td>
+    </tr>
+    <tr id="java">
+        <td>Java</td>
+        <td>Intermediate</td>
+        <td>⭐⭐⭐</td> 
+    </tr>
+
+</table>
+<h5 class="headings">Resume: </h5>
+<input class="buttons" type="button" name="download" id="CV" value="Download"  onclick="window.open('https:\\www.linkedin.com/feed/', '_blank')"> 
 
 </body>
 </html>
