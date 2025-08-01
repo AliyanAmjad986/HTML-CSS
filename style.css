@@ -3,61 +3,78 @@
     color: #c29025f4;
     margin: 10px;
 }
+.headings:hover {
+    color: #0f7705f4;
+    cursor: pointer;
+}
 #myimg {
     height: auto;
-   width: 100px;
-   border-radius: 10px;
+   width: 300px;
+    border-radius: 50%;
+    border: 2px solid #c29025f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-right: 100px;
+    /* padding-bottom: 100px; */
+    padding-left: 0px;
 }
-/* body {
-    background-image: url('Background.png'); 
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-} */
- 		body{
-            background-image: url('back2.gif');
-            background-size: 100% 100%;
-            
-        }
-        .skills-table {
-            border-width: 2px;
-            border-color: rgb(255, 7, 7);
-            
-        }
-        
-		.skills-table tr {
-            
-            border-color: black;
-            border-right-color: black;
-            border-bottom-left-radius: 10px;
-             height: 50px;
-             
+.image {
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    
+    margin-left: 1250px;
+    
+    margin-bottom: 20px;
+    padding-left: 200px;
+}
+h1{
+    text-align: center;
+    color: #c29025f4;
+    font-size: 5em;
+    margin-top: 20px;
+}
+h1:hover {
+    color: #0f7705f4;
+    cursor: pointer;
+}
+body{
+        background-image: url('Background.png');
+        background-size: 100% 100%;   
+        background-attachment: fixed;}
 
+
+
+        /* .skills-table css */
+        .skills-column , .level-column, .rating-column {
+            margin: 20px 0;
+           border-left: #c29025f4 1px solid;
+              border-right: #c29025f4 1px solid;
+              border-top: #c29025f4 1px solid;
+              border-bottom: #c29025f4 1px solid;
+           border-radius: 10px;
+            
         }
-         .skills-table th {
+        .skills-column th, .level-column th, .rating-column th {
             background-color: #c29025f4;
             color: white;
             padding: 10px;
-            border-radius: 10px;
-            width: 10% ;
-            border-width: 2px;
-            border-spacing: 100px;
+            text-align: center;
             
-        
+            border-radius: 8px;
         }
-        .skills-table th:hover {
-                background-color: #0f7705f4;
-            }
-        
-       
-        .skills-table td {
+        .skills-column th:hover, .level-column th:hover, .rating-column th:hover {
+            background-color: #0f7705f4;;
+            cursor: grabbing;
+         
+        }
+        .skills-column td, .level-column td, .rating-column td {
             padding: 10px;
             text-align: center;
-            border-radius: 10px;
-            width: 20%;
-            border-width: 5px;
-             border-spacing: 100px;
-           
-        } 
+            
+        }
+        .skill-div {
+         display: inline-block;
+        }
         a {
             text-decoration: none;
             color: #c29025f4;
@@ -88,4 +105,37 @@
         }
         .navbutton:hover {
             background-color: #0f7705f4;
+        }
+        .education-table  {
+            border: 1px solid #c29025f4;
+        }
+        .education-table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #c29025f4;
+            
+        }
+        .education-table th   {
+            background-color: #c29025f4;
+            color: white;
+             padding: 10px;
+            text-align: center;
+            border: 1px solid #c29025f4;
+            border-radius: 10px;
+            
+        }
+        .education-table th:hover {
+            background-color: #0f7705f4;
+        }
+ nav {
+            background-color: transparent;    
+        }
+        .nav-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header {
+            background-color: transparent;
+            text-align: center;
         }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
     <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Untitled design.png" type="image/x-icon">
@@ -12,6 +13,12 @@
 
 
 <body>
+    
+<header>
+    <div class="nav-div">
+        
+    <nav>
+     
 <ul class="nav">
     
     <a href=""><button class="navbutton"><li>About</li></button></a>
@@ -22,44 +29,87 @@
      <a href=""><button class="navbutton"><li>Contact</li></button></a>
     
 </ul>
+</div>
+</nav>
+</header>
     <h1>⚽Welcome to my portfolio!</h1>
-    <img id="myimg" src="mypic.jpg" alt="mypic">
+    <div class="image"><img id="myimg" src="itme.png" alt="mypic"></div>
     
     <h5 class="headings">Introduction:</h5>
-    <p>I’m Aliyan Amjad, a passionate learner exploring Software Development.
+<p>I’m Aliyan Amjad, a passionate learner exploring Software Development.
    <br> I enjoy building projects, learning new skills, and growing every day to achieve my goals.
 </p>
-
+<div>
 <h5 class="headings">My Github: </h5>
 <a href="https://github.com/AliyanAmjad986"> AliyanAmjad986</a>
-
+</div>
+<div>
 <h5 class="headings"> Education: </h5>
-<ul>
-    <li>Cadet Collage Choa Saiden Shah</li>
-    <li>Capital University of Science and Technology Islamabad</li>
-</ul>
-<h5 class="headings">Skills: </h5>
-
-<table class="skills-table" border="1">
+<table class="education-table">
     <tr>
-        <th> Skill</th>
+        <th>Name</th>
+        <th>Qualification</th>
+        <th>Year</th>
+    </tr>
+    <tr>
+        <td>Cadet Collage Choa Saiden Shah</td>
+        <td>ICS</td>
+        <td>2019-2021</td>
+    </tr>
+    <tr>
+        <td>Capital University of Science and Technology Islamabad</td>
+        <td>BS Sofware Engineering</td>
+        <td>2021-2025</td>
+    </tr>
+</table>
+</div>
+<div>
+<h5 class="headings">Skills: </h5>
+<div class="skill-div">
+<table class="skills-column">
+    <tr>
+        <th>Skill</th>
+    </tr>
+    <tr>
+        <td>HTML+CSS</td>
+    </tr>
+    <tr>
+    <td>Java</td>
+    </tr>
+    </table>
+    </div>
+    <!-- level-column -->
+<div class="skill-div">
+        <table class ="level-column">
+              <tr>
         <th>Level</th>
+    </tr>
+    <tr>
+        <td>Intermediate</td>
+    </tr>
+    <tr>
+    <td>Intermediate</td>
+    </tr>
+</table>
+</div>
+<!-- rating-column -->
+<div class="skill-div">
+    <table class ="rating-column">
+    <tr>
         <th>Rating</th>
     </tr>
-    <tr class="HTML CSS">
-        <td>HTML+CSS</td>
-        <td>Intermediate</td>
+    <tr>
         <td>⭐⭐⭐</td>
     </tr>
-    <tr id="java">
-        <td>Java</td>
-        <td>Intermediate</td>
-        <td>⭐⭐⭐</td> 
+    <tr>
+    <td>⭐⭐⭐</td>
     </tr>
-
-</table>
+    </table>
+     </div>      
+</div>
+<div>
 <h5 class="headings">Resume: </h5>
 <input class="buttons" type="button" name="download" id="CV" value="Download"  onclick="window.open('https:\\www.linkedin.com/feed/', '_blank')"> 
-
+</div>
 </body>
 </html>

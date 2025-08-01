@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: #fff;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: 0px 0px ;
+            
+        }
+
+        .card h2 {
+            margin: 15px 0 5px;
+            font-size: 24px;
+        }
+
+        .overall {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        .skills p {
+            background: #eee;
+            padding: 8px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="mypic.jpg" alt="Player Image">
+        <h2>Aliyan Amjad</h2>
+        <div class="overall">Overall: 85</div>
+        <div class="skills">
+            <p>Speed: 90</p>
+            <p>Shooting: 80</p>
+            <p>Passing: 75</p>
+            <p>Defense: 70</p>
+        </div>
+    </div>
+</body>
+</html>
