@@ -1,16 +1,4 @@
-.headings {
-    font-size: 1.5em;
-    color: #c29025f4;
-    margin-left: 90px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-   
-    width: 20%;
-}
-.headings:hover {
-    color: #31c224f4;
-    cursor:auto;
-}
+
 
 
 
@@ -34,6 +22,7 @@
     position: absolute;
     /* clip-path: inset(0 100px 0 0);  */
     right: 0px;
+    bottom: 0px;
 
 }
 .image {
@@ -47,7 +36,7 @@
     object-fit: cover;
     
 }
-
+/* //wecome */
 h1{
     text-align: center;
     color: #c29025f4;
@@ -65,7 +54,7 @@ body{
         background-attachment: fixed;}
 
         /* introductiondiv */
-.heading-intro {
+.heading-skills {
     font-size: 1.5em;
     color: #c29025f4;
     margin-left: 80px;
@@ -75,11 +64,11 @@ body{
     width: 20%;
     
 }
-.heading-intro:hover {
+.heading-skills:hover {
     color: #31c224f4;
     cursor: auto;
 }
-.intro-div{
+.skillsheading-div{
     margin-top: 0px;
     h5{
         font-size : 100px
@@ -91,20 +80,22 @@ body{
         margin-top: 0px;
         width: 60%;
     }
-    .intro-image {
+    .skills-image {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        /* margin-left: 100px; */
         position:absolute;
         margin-top: 10px;
-
-        /* border: 2px solid #c29025f4; */
-        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
     }
 }
 
         /* .skills-table css */
+        .skillstable-div {
+         display: inline-block;
+         /* display: flex; */
+        }
+
+
         .skills-column , .level-column, .rating-column {
             /* margin: 20px 0; */
            border-left: #c29025f4 1px solid;
@@ -132,13 +123,18 @@ body{
             text-align: center;
             
         }
-        .skill-div {
-         display: inline-block;
-        }
+        
         a {
             text-decoration: none;
             color: #c29025f4;
         }
+
+
+
+
+
+
+        /* Nav CSS */
         .buttons {
             background-color: #c29025f4;
             color: #ffffff;
