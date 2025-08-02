@@ -1,4 +1,16 @@
-
+.headings {
+    font-size: 1.5em;
+    color: #c29025f4;
+    margin-left: 90px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+   
+    width: 20%;
+}
+.headings:hover {
+    color: #31c224f4;
+    cursor:auto;
+}
 
 
 
@@ -10,9 +22,9 @@
    border-radius: 50%;
     
     
-    margin-top: calc(50vh - 150px);
-    /* transform: translateY(60%); */
-    transform: translateX(-10%);
+    /* margin-top: calc(40vh - 140px); */
+    /* transform: translateY(-40%); */
+    transform: translateX(-2%);
     
     border: 2px solid #c29025f4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -55,7 +67,7 @@ body{
 
         /* introductiondiv */
 .heading-skills {
-    font-size: 1.5em;
+    /* font-size: 1px; */
     color: #c29025f4;
     margin-left: 80px;
     margin-bottom: 0px;
@@ -71,7 +83,7 @@ body{
 .skillsheading-div{
     margin-top: 0px;
     h5{
-        font-size : 100px
+        font-size : 80px;
         
     }
     p{
@@ -92,10 +104,12 @@ body{
         /* .skills-table css */
         .skillstable-div {
          display: inline-block;
+         margin-left: 10px;
+         margin-right: 80px;
          /* display: flex; */
         }
 
-
+        
         .skills-column , .level-column, .rating-column {
             /* margin: 20px 0; */
            border-left: #c29025f4 1px solid;
@@ -119,8 +133,9 @@ body{
          
         }
         .skills-column td, .level-column td, .rating-column td {
-            padding: 10px;
+            padding: 8px;
             text-align: center;
+
             
         }
         
@@ -135,18 +150,6 @@ body{
 
 
         /* Nav CSS */
-        .buttons {
-            background-color: #c29025f4;
-            color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: grabbing;
-            
-        }
-        .buttons:hover {
-            /* background-color: #31c224f4; */
-        }
         .nav{
             list-style-type: none;
         }
@@ -162,27 +165,7 @@ body{
         .navbutton:hover {
             background-color: #31c224f4;
         }
-        .education-table  {
-            border: 1px solid #c29025f4;
-        }
-        .education-table td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #c29025f4;
-            
-        }
-        .education-table th   {
-            background-color: #c29025f4;
-            color: white;
-             padding: 10px;
-            text-align: center;
-            border: 1px solid #c29025f4;
-            border-radius: 10px;
-            
-        }
-        .education-table th:hover {
-            background-color: #0f7705f4;
-        }
+        
  nav {
             background-color: transparent;    
         }
@@ -194,4 +177,18 @@ body{
         header {
             background-color: transparent;
             text-align: center;
+        }
+
+        /* FooterContact */
+        .conbutton {
+            background-color: #c29025f4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .conbutton:hover {
+            background-color: #31c224f4;
         }
