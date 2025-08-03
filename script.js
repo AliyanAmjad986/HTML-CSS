@@ -9,11 +9,10 @@ let navbuttons={
     Contact: document.getElementById('Contact')
 } //mainlearning
 let conbuttons ={
-    Github: document.getElementById('Github')
-    // LinkedIn: document.getElementById('LinkedIn'),
-    // Twitter: document.getElementById('Twitter'),
-    // Facebook: document.getElementById('Facebook'),
-    // Instagram: document.getElementById('Instagram')
+    Github: document.getElementById('Github'),
+    Linkedln: document.getElementById('LinkedIn'),
+    Email: document.getElementById('Email')
+    
 }
 
 navbuttons.Home.addEventListener('click', function() {
@@ -27,4 +26,10 @@ navbuttons.Education.addEventListener('click', function() {
 });
 Github.addEventListener('click', function() {
     window.open('https://github.com/AliyanAmjad986', '_blank'); // Open GitHub in a new tab;
+});
+conbuttons.Linkedln.addEventListener('click', function() {
+    window.open('https://www.linkedin.com/in/aliyan-amjad-610274301', '_blank'); // Open LinkedIn in a new tab
+});
+conbuttons.Email.addEventListener('click', function () {
+    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=aliyanamjad54@gmail.com&su=Subject%20Here&body=Your%20message%20here','_blank');
 });
