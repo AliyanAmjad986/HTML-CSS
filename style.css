@@ -1,16 +1,4 @@
-.headings {
-    font-size: 1.5em;
-    color: #c29025f4;
-    margin-left: 90px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-   
-    width: 20%;
-}
-.headings:hover {
-    color: #31c224f4;
-    cursor:auto;
-}
+
 
 
 
@@ -30,6 +18,11 @@
        right: 0px;
 
 }
+#myimg:hover {
+    transform: translateX(-5%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
 .image {
     display: flex;
     justify-content: right;
@@ -47,10 +40,14 @@ h1{
     color: #c29025f4;
     font-size: 5em;
     margin-top: 20px;
+        margin-left: 140px;
+    width: 80% ;
+
 }
 h1:hover {
       color: #31c224f4;
-
+    transform: translateY(5px);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 body{
@@ -70,6 +67,8 @@ body{
 }
 .heading-intro:hover {
     color: #31c224f4;
+    transform: translateY(5px);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: auto;
 }
 .intro-div{
@@ -92,43 +91,13 @@ body{
         /* border: 2px solid #c29025f4; */
         /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
     }
+    .intro-image:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 }
 
-        /* .skills-table css */
-        .skills-column , .level-column, .rating-column {
-            /* margin: 20px 0; */
-           border-left: #c29025f4 1px solid;
-              border-right: #c29025f4 1px solid;
-              border-top: #c29025f4 1px solid;
-              border-bottom: #c29025f4 1px solid;
-           border-radius: 10px;
-            
-        }
-        .skills-column th, .level-column th, .rating-column th {
-            background-color: #c29025f4;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            
-            border-radius: 8px;
-        }
-        .skills-column th:hover, .level-column th:hover, .rating-column th:hover {
-            background-color: #0f7705f4;;
-            cursor: grabbing;
-         
-        }
-        .skills-column td, .level-column td, .rating-column td {
-            padding: 10px;
-            text-align: center;
-            
-        }
-        .skill-div {
-         display: inline-block;
-        }
-        a {
-            text-decoration: none;
-            color: #c29025f4;
-        }
         .buttons {
             background-color: #c29025f4;
             color: #ffffff;
@@ -169,28 +138,10 @@ body{
         }
         .navbutton:hover {
             background-color: #31c224f4;
+    transform: translateY(-5px);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .education-table  {
-            border: 1px solid #c29025f4;
-        }
-        .education-table td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #c29025f4;
-            
-        }
-        .education-table th   {
-            background-color: #c29025f4;
-            color: white;
-             padding: 10px;
-            text-align: center;
-            border: 1px solid #c29025f4;
-            border-radius: 10px;
-            
-        }
-        .education-table th:hover {
-            background-color: #0f7705f4;
-        }
+      
  nav {
             background-color: transparent;    
         }
@@ -215,6 +166,8 @@ body{
         }
         .conbutton:hover {
             background-color: #31c224f4;
+    transform: translateY(-5px);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .contact-div {
@@ -231,5 +184,11 @@ body{
                 margin-bottom: 10px;
                 font-size: 1.5em;
                 
+            }
+            h5:hover{
+                color: #31c224f4;
+                transform: translateY(5px);
+                cursor: pointer;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
         }

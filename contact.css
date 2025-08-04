@@ -1,23 +1,8 @@
 
-h1{
-    text-align: center;
-    color: #c29025f4;
-    font-size: 5em;
-    margin-top: 20px;
-        margin-left: 310px;
-    width: 50% ;
 
-}
-h1:hover {
-      color: #31c224f4;
-    transform: translateY(10px);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-body{
-        background-image: url('Background.png');
-        background-size: 100% 100%;   
-        background-attachment: fixed;}
+
+
+
 
 
 /* my images */
@@ -37,8 +22,8 @@ body{
 }
 #myimg:hover {
     transform: translateX(-5%);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);  
-    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 .image {
     display: flex;
@@ -52,10 +37,29 @@ body{
     
 }
 
+/* h1{
+    text-align: center;
+    color: #c29025f4;
+    font-size: 5em;
+    margin-top: 20px;
+        margin-left: 140px;
+    width: 80% ;
+
+}
+h1:hover {
+      color: #31c224f4;
+    transform: translateY(5px);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
+}*/
+body{
+        background-image: url('Background.png');
+        background-size: 100% 100%;   
+        background-attachment: fixed;}
 
         /* introductiondiv */
-.heading-edu {
-     font-size: 70px;  
+.heading-intro {
+     font-size: 80px;  
     color: #c29025f4;
     margin-left: 80px;
     margin-bottom: 0px;
@@ -63,20 +67,24 @@ body{
     width: 20%;
     
 }
-.heading-edu:hover {
+.heading-intro:hover {
     color: #31c224f4;
-    cursor: auto;
-    transform: translateY(10px);
+    transform: translateY(5px);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: auto;
 }
-.eduheading-div{
+.intro-div{
     margin-top: 0px;
     
-    
-}
-.edu-image {
-        width: 70px;
-        height: 70px;
+    p{
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 0px;
+        width: 60%;
+    }
+    .intro-image {
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         /* margin-left: 100px; */
         position:absolute;
@@ -85,11 +93,14 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
         /* border: 2px solid #c29025f4; */
         /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
     }
-    .edu-image :hover {
-        transform: translateY(-5px);    
+    .intro-image:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-                .buttons {
+}
+
+        .buttons {
             background-color: #c29025f4;
             color: #ffffff;
             padding: 10px 20px;
@@ -101,7 +112,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
         .buttons:hover {
             /* background-color: #31c224f4; */
         }
-        .nav{
+       .nav{
             list-style-type: none;
             display: flex;
             justify-content: center;    
@@ -130,38 +141,9 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
         .navbutton:hover {
             background-color: #31c224f4;
     transform: translateY(-5px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-        }
-        .education-table  {
-            border: 2px solid #c29025f4;
-            margin-top: 10px;
-            margin-left: 10px;
-        }
-        .education-table :hover{
-            /* background-color: #0f7705f4; */
-    transform: translateY(-5px);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
-            color: white;
         }
-        .education-table td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #c29025f4;
-            
-        }
-        .education-table th   {
-            background-color: #c29025f4;
-            color: white;
-             padding: 10px;
-            text-align: center;
-            border: 1px solid #c29025f4;
-            border-radius: 10px;
-            
-        }
-        .education-table th:hover {
-            background-color: #0f7705f4;
-        }
+      
  nav {
             background-color: transparent;    
         }
@@ -212,3 +194,76 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
         }
+
+
+
+
+
+
+.contact-container {
+    background-color: transparent;
+    padding: 40px 30px ;
+    /* padding-right: -40px; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 500px;
+    /* align-content: center; */
+    border: 2px solid #c29025f4;
+    
+}
+
+/* Heading & Paragraph */
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #eff2f3;
+}
+
+.contact-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+    /* padding-right: 20px; */
+}
+
+/* Labels & Inputs */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #222;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+.contactbtn {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactbtn:hover {
+    background-color: #0056b3;
+}

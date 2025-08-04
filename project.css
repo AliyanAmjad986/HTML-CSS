@@ -1,23 +1,4 @@
 
-h1{
-    text-align: center;
-    color: #c29025f4;
-    font-size: 5em;
-    margin-top: 20px;
-        margin-left: 310px;
-    width: 50% ;
-
-}
-h1:hover {
-      color: #31c224f4;
-    transform: translateY(10px);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-body{
-        background-image: url('Background.png');
-        background-size: 100% 100%;   
-        background-attachment: fixed;}
 
 
 /* my images */
@@ -34,12 +15,14 @@ body{
     position: absolute;
        right: 0px;
 
-}
-#myimg:hover {
+
+    }
+    #myimg:hover {
     transform: translateX(-5%);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);  
-    transition: transform 0.3s ease, box-shadow 0.3s ease;  
-}
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    }
 .image {
     display: flex;
     justify-content: right;
@@ -52,9 +35,32 @@ body{
     
 }
 
+h1{
+    text-align: center;
+    color: #c29025f4;
+    font-size: 5em;
+    margin-top: 20px;
+    margin-left: 340px;
+    width: 45% ;
+}
+h1:hover {
+      color: #31c224f4;
+    transform: translateY(10px);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+body{
+        background-image: url('Background.png');
+        background-size: 100% 100%;   
+        background-attachment: fixed;
+    
+
+    }
+
+        
 
         /* introductiondiv */
-.heading-edu {
+.heading-project {
      font-size: 70px;  
     color: #c29025f4;
     margin-left: 80px;
@@ -63,18 +69,17 @@ body{
     width: 20%;
     
 }
-.heading-edu:hover {
+.heading-project:hover {
     color: #31c224f4;
-    cursor: auto;
     transform: translateY(10px);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: auto;
 }
-.eduheading-div{
+.project-div{
     margin-top: 0px;
     
-    
-}
-.edu-image {
+ 
+    .project-image {
         width: 70px;
         height: 70px;
         border-radius: 50%;
@@ -85,11 +90,15 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
         /* border: 2px solid #c29025f4; */
         /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
     }
-    .edu-image :hover {
-        transform: translateY(-5px);    
+    .project-image:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-                .buttons {
+}
+
+        
+        .buttons {
             background-color: #c29025f4;
             color: #ffffff;
             padding: 10px 20px;
@@ -98,10 +107,8 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: grabbing;
             
         }
-        .buttons:hover {
-            /* background-color: #31c224f4; */
-        }
-        .nav{
+        
+       .nav{
             list-style-type: none;
             display: flex;
             justify-content: center;    
@@ -131,36 +138,6 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
             background-color: #31c224f4;
     transform: translateY(-5px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-        }
-        .education-table  {
-            border: 2px solid #c29025f4;
-            margin-top: 10px;
-            margin-left: 10px;
-        }
-        .education-table :hover{
-            /* background-color: #0f7705f4; */
-    transform: translateY(-5px);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-            color: white;
-        }
-        .education-table td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #c29025f4;
-            
-        }
-        .education-table th   {
-            background-color: #c29025f4;
-            color: white;
-             padding: 10px;
-            text-align: center;
-            border: 1px solid #c29025f4;
-            border-radius: 10px;
-            
-        }
-        .education-table th:hover {
-            background-color: #0f7705f4;
         }
  nav {
             background-color: transparent;    
@@ -187,7 +164,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
         .conbutton:hover {
             background-color: #31c224f4;
     transform: translateY(-5px);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .contact-div {
@@ -207,8 +184,53 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
             h5:hover{
                 color: #31c224f4;
-                transform: translateY(5px);
+                transform: translateY(10px);
                 cursor: pointer;
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
         }
+        .project-card {
+            background-color: transparent;
+            border: 2px solid #c29025f4;
+         
+            border-radius: 20px;
+            padding: 10px;
+            margin-top: 10px;
+            width: 30%;
+           margin-left: 30px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+         
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+        }
+.project-name {
+    
+            font-size: 26px;
+            color: #db9d17f4;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+.project-info p {
+            margin: 12px 0;
+            line-height: 1.6;
+            font-size: 16px;
+            color: #e9e1e1;
+        }
+.project-info span {
+            margin-right: 6px;
+            font-size: 18px;
+        }
+strong {
+            color: #e8e2e2;
+        }
+        .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+        
+ 
