@@ -1,11 +1,22 @@
-
+.main-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
 h1{
     text-align: center;
     color: #c29025f4;
     font-size: 5em;
     margin-top: 20px;
-        margin-left: 310px;
-    width: 50% ;
+        /* margin-left: 310px; */
+    /* width: 50% ; */
 
 }
 h1:hover {

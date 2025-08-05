@@ -221,13 +221,25 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 10px;
     color: #eff2f3;
 }
+.contact-container h1:hover {
+    color: #c29025f4;
+    transform: translateY(5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
 
 .contact-container p {
     text-align: center;
     margin-bottom: 20px;
     font-size: 14px;
-    color: #666;
+    color:#eff2f3;
     /* padding-right: 20px; */
+}
+.contact-container p:hover {
+    color: #c29025f4;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 /* Labels & Inputs */
@@ -236,9 +248,14 @@ label {
     margin-top: 15px;
     margin-bottom: 5px;
     font-size: 14px;
-    color: #222;
+    color: #eff2f3;
 }
-
+label:hover {
+    color: #c29025f4;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
 input, textarea {
     width: 100%;
     padding: 10px;

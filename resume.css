@@ -6,7 +6,6 @@
     height: 300px;
    width: 300px;
    border-radius: 50%;    
-    /* transform: translateY(60%); */
     transform: translateX(-10%);
     
     border: 2px solid #c29025f4;
@@ -14,12 +13,11 @@
     padding-left: 0px;
     position: absolute;
        right: 0px;
-
-
+/* display: flex;
+flex-wrap: wrap; */
     }
     #myimg:hover {
     transform: translateX(-5%);
-    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     }
@@ -34,17 +32,27 @@
     object-fit: cover;
     
 }
-
-h1{
+.main-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+h1{
+    /* text-align: center; */
     color: #c29025f4;
     font-size: 5em;
     margin-top: 20px;
-    margin-left: 340px;
-    width: 45% ;
-/* position: absolute;     */
-    /* position:sticky ;
-    position-visibility: visible; */
+    align-self: center;
+    align-content: center;
+    display: flow-root;
+
 }
 h1:hover {
       color: #31c224f4;
@@ -163,6 +171,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
             border-radius: 5px;
             cursor: pointer;
             margin: 5px;
+           
         }
         .conbutton:hover {
             background-color: #31c224f4;
@@ -171,10 +180,12 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .contact-div {
-            display: inline-block;
+            /* display: flex;
+            flex-wrap: wrap; */
             width: 100%;
             height: auto;
             text-align: center;
+            /* align-content: center; */
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -183,6 +194,9 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
                 color: #c29025f4;
                 margin-bottom: 10px;
                 font-size: 1.5em;
+                width: 100%;
+                text-align: center;
+                align-content: center;
                 
             }
             h5:hover{

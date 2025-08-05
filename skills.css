@@ -41,14 +41,27 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     object-fit: cover;
     
 }
+.main-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
 /* //wecome */
 h1{
+
     text-align: center;
     color: #c29025f4;
     font-size: 5em;
     margin-top: 20px;
-        margin-left: 300px;
-    width: 50% ;
+        /* margin-left: 300px; */
+    /* width: auto ; */
 
 }
 h1:hover {

@@ -34,14 +34,26 @@
     object-fit: cover;
     
 }
+.main-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
 
 h1{
     text-align: center;
     color: #c29025f4;
     font-size: 5em;
     margin-top: 20px;
-    margin-left: 340px;
-    width: 45% ;
+    /* margin-left: 340px; */
+    /* width: 45% ; */
 }
 h1:hover {
       color: #31c224f4;
@@ -200,7 +212,13 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
            margin-left: 30px;
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-         
+         display: inline-block;
+            text-align: center;
+            color: #e9e1e1;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+            overflow: hidden;
+            
         }
         .project-card:hover {
             transform: translateY(-5px);
@@ -218,11 +236,28 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
             line-height: 1.6;
             font-size: 16px;
             color: #e9e1e1;
+            max-height: max-content;
+            
         }
 .project-info span {
             margin-right: 6px;
             font-size: 18px;
+            /* max-height: max-content; */
+      transition: max-height 0.5s ease;
+      
         }
+        .project-info.expanded {
+      max-height: 1000px; /* Adjust as needed */
+    }
+   .project-discription{
+max-height: 60px;
+   }
+    .read-more {
+      color: #db9d17f4;
+      cursor: pointer;
+      margin-top: 10px;
+      display: inline-block;
+    }
 strong {
             color: #e8e2e2;
         }
@@ -232,5 +267,11 @@ strong {
   align-items: center;
 }
 
-        
+        .morecontent {
+            display: none;
+            color: #c29025f4;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
  

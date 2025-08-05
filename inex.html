@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Read More Example</title>
+  <style>
+    .description {
+      overflow: hidden;
+      max-height: 100px; /* Initial visible height */
+      transition: max-height 0.5s ease;
+    }
+
+    .description.expanded {
+      max-height: 1000px; /* Adjust as needed */
+    }
+
+    .read-more {
+      color: blue;
+      cursor: pointer;
+      margin-top: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Project Title</h2>
+
+  <div class="description" id="projectDesc">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum, lorem ut laoreet iaculis, nibh urna gravida felis, non posuere enim justo sit amet nunc. Cras dapibus sem eget purus pharetra, non condimentum quam porta. Integer in tellus a nulla mattis mattis. Sed accumsan, leo at efficitur tincidunt, metus orci bibendum justo, vitae tristique dolor odio at nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  </div>
+
+  <span class="read-more" onclick="toggleReadMore()">Read More</span>
+
+  <script>
+    function toggleReadMore() {
+      var desc = document.getElementById("projectDesc");
+      var btn = document.querySelector(".read-more");
+
+      if (desc.classList.contains("expanded")) {
+        desc.classList.remove("expanded");
+        btn.innerText = "Read less";
+      } else {
+        desc.classList.add("expanded");
+        btn.innerText = "Read more";
+      }
+    }
+  </script>
+
+</body>
+</html>
