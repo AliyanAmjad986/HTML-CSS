@@ -64,19 +64,50 @@ if(projectcard.project2){
 }
 
 
-      function morecontent(button) {
+    //   function morecontent(button) {
+    //   const container = button.closest('.project-info');
+    //   const description = container.querySelector('.project-discription');
+
+    //   if (description.classList.contains('morecontent')) {
+    //     description.classList.remove('morecontent');
+    //     button.textContent = 'Read less';
+    //   } else {
+    //     description.classList.add('morecontent');
+    //     button.textContent = 'Read more';
+    //   }
+    // }
+
+function morecontent(button) {
+      // Sabse pehle button ke parent container ko dhoondo
       const container = button.closest('.project-info');
+
+      // Container ke andar description dhoondo
       const description = container.querySelector('.project-discription');
 
+      // Agar description chhupi hui hai (morecontent class lagi hui hai)
       if (description.classList.contains('morecontent')) {
+        // To class hata do (taake wo dikhai de)
         description.classList.remove('morecontent');
+
+        // Button ka text change karo
         button.textContent = 'Read less';
       } else {
+        // Wapas description chhupao
         description.classList.add('morecontent');
+
+        // Button ka text wapas "Read more" karo
         button.textContent = 'Read more';
       }
     }
 
-   
+
+
+let resumedownload = document.getElementById('resumedownload');
+function download_resume(){
+if(resumedownload.onclick){
+    window.open('https://github.com/AliyanAmjad986/Internship-projects', '_blank')
+}
+}
+
 
 
